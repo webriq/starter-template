@@ -1,35 +1,16 @@
-# Roots + WebriQ CMS
+# Starter Template
 
-This is a simple example of how to integrate Webriq CMS with a roots based site.
+WebriQ Starter Template
 
-## Setting up
+## Setup
 
-* Install [node](https://nodejs.org/en/) application in your system.
+- make sure [node.js](http://nodejs.org) is at version >= `6`
+- `npm i spike -g`
+- clone this repo down and `cd` into the folder
+- run `npm install` or `yarn`
+- run `spike watch` or `spike compile`
 
-* Install [roots](http://roots.cx/articles/getting-started) in your system globally `npm i roots -g` if you haven't done this before.
-
-* Make sure to install the [netlify-git-api](https://github.com/webriq/netlify-git-api) before you start.
-
-Then:
-
-```bash
-git clone https://github.com/webriq/starter-template
-cd starter-template
-netlify-git-api users add
-netlify-git-api serve
-```
-
-Open a separate terminal window and run:
-
-```bash
-npm install
-roots watch
-```
-
-## Using
-
-Visit [localhost:1111](http://localhost:1111/) to browser the site.
-
-Visit [localhost:1111/admin](http://localhost:1111/admin) to use the CMS.
-
-To run against the GitHub API in production, edit the production backend settings for `admin/config.yml` with the correct repository and branch.
+## Testing
+Tests are located in `test/**` and are powered by [ava](https://github.com/sindresorhus/ava)
+- `npm install` to ensure devDeps are installed
+- `npm test` to run test suite
